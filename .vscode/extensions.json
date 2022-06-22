@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "mrmlnc.vscode-scss",
+    "dsznajder.es7-react-js-snippets"
+  ]
+}

@@ -1,0 +1,52 @@
+@use "./themes/fonts";
+@use "./themes/mixins";
+
+* {
+  box-sizing: border-box;
+  font-family: "Diavlo";
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @include mixins.disable-scrollbar;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input {
+  outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button {
+  outline: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgba($color: #ffffff, $alpha: 0.12);
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+  backdrop-filter: blur(6px);
+  font-size: 16px;
+  padding: 10px 10px 8px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: transform linear .2s;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+}
